@@ -1,0 +1,478 @@
+/* Reset some default styles */
+h1, h2, h3, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    animation: gradientBG 10s linear infinite;
+    
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #0088d9;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.btn {
+    /* Existing button styles */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn {
+    /* Existing button styles */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005aa7;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #005aa7;
+    color: #fff;
+}
+.video-slide {
+    width: 100%; /* Set the width to 100% to make it responsive */
+    height: auto; /* Let the height adjust automatically based on the aspect ratio */
+    object-fit: cover; /* Scale the video to cover the container while maintaining aspect ratio */
+    background-color: black; /* Set a background color as a fallback */
+  }
+  
+  /* If you want to center the video horizontally and vertically within its container */
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  /* If you want to remove the default video controls */
+  .video-slide::-webkit-media-controls {
+    display: none;
+  }
+  
+  .video-slide::-webkit-media-controls-panel {
+    display: none !important;
+  }
+  
+  .video-slide::media-controls {
+    display: none;
+  }
+  
+
+/* Hero Section Styles */
+#hero {
+    background-image: url('img/bg.jpeg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00599b;
+    transform: scale(1.05);
+}
+
+/* Featured Destinations Section Styles */
+#destinations {
+    /* background-color: #21040495; */
+    background-image: url("img/background.jpg");
+    padding: 40px 0;
+}
+
+.destination-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(214, 3, 3, 0.2);
+    text-align: center;
+    background: url("img/video1.mp4");
+}
+
+.destination-card img {
+    height: 45%;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.destination-card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.destination-card p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #f0f0f0;
+
+}
+
+.destination-card a {
+    display: inline-block;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.destination-card a:hover {
+    background-color: #00599b;
+}
+.btn {
+    /* Existing button styles */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005aa7;
+    color: #fff;
+}
+
+
+/* Popular Activities Section Styles */
+#activities {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.activity {
+    text-align: center;
+    padding: 20px;
+}
+
+.activity img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.activity h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.activity p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Contact Section Styles */
+#contact {
+    background-color: #f6f6f6; /* Light gray background */
+    padding: 60px 0; /* Increased padding for more spacing */
+    text-align: center; /* Center align content */
+}
+
+#contact h2 {
+    font-size: 36px; /* Slightly larger font size */
+    margin-bottom: 30px; /* More spacing below the heading */
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+#contact p {
+    font-size: 20px; /* Larger font size for text */
+    margin-bottom: 30px; /* More spacing below paragraphs */
+    line-height: 1.6; /* Improved readability */
+    color: #666; /* Slightly darker text color */
+}
+
+#contact form {
+    text-align: center;
+    max-width: 500px; /* Limit form width for readability */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+#contact label {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+    display: block; /* Display labels on a new line */
+    text-align: left; /* Left-align labels */
+    color: #444; /* Slightly darker label text color */
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding for better input styling */
+    margin-bottom: 30px; /* More spacing below input fields */
+    border: 2px solid #ccc; /* Slightly thicker border */
+    border-radius: 10px; /* Rounded input fields */
+    font-size: 18px; /* Larger font size for inputs */
+}
+
+#contact textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+#contact button {
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px; /* Increased button padding */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Add a smooth background color transition */
+}
+
+#contact button:hover {
+    background-color: #00599b; /* Darker button color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* About Us Section Styles */
+#about-us {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center; /* Center align content */
+}
+
+#about-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333; /* Change text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+#about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Increase line height for readability */
+    color: #666; /* Adjust text color */
+}
+
+#about-us a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; /* Change link color */
+    transition: color 0.3s ease-in-out; /* Add a smooth color transition effect */
+}
+
+#about-us a:hover {
+    color: #FF6B6B; /* Change link color on hover */
+}
+
+/* Add a stylish border to the section */
+#about-us::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 4px;
+    background-color: #007BFF; /* Stylish line color */
+    margin: 20px auto;
+}
+
+/* Add a subtle box shadow to the section */
+#about-us {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a stylish border to the heading */
+#about-us h2::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #FF6B6B; /* Stylish line color */
+    margin: 0 auto 10px;
+}
+
+/* Add a stylish background to the heading */
+#about-us h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 8px;
+    background: linear-gradient(90deg, #FF6B6B 0%, #007BFF 100%); /* Gradient background */
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+/* Style the paragraph with a background color and padding */
+#about-us p {
+    background-color: #fff; /* White background for paragraphs */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Add a subtle hover effect to paragraphs */
+#about-us p:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+/* Footer Styles */
+footer {
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+    font-weight: bold;
+}
+.btn {
+    /* Existing button styles */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005aa7;
+    color: #fff;
+}
+
+
+/* Section Headers */
+footer h2, footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00c2ff;
+}
+
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Contact Information */
+address p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Quick Links */
+#additional-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+#additional-links ul li {
+    margin-bottom: 10px;
+}
+
+#additional-links ul li a {
+    color: #00c2ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#additional-links ul li a:hover {
+    color: #00a0d4;
+}
+
+/* Footer Styling */
+#footer-styling p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Add a subtle border-top to the footer */
+footer::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Gradient background */
+footer {
+    background: linear-gradient(90deg, #292929 0%, #000 100%);
+}
+/* Apply animations to elements with the "animated" class */
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Trigger the animation when the element comes into view */
+.animated.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
