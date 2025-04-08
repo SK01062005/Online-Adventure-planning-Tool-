@@ -1,0 +1,176 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url("img/ook.jpg");
+}
+
+header {
+    background-color: #00a2e8;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('img/beach.webp');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00a2e8;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.destination-card {
+    background-color:antiquewhite;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/* Style for the content section */
+.content.activities {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Style for activity cards */
+.activity-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.activity-card:hover {
+    transform: scale(1.05); /* Zoom in a bit on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.activity-card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.activity-card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333; /* Text color */
+}
+
+.activity-card p {
+    font-size: 16px;
+    color: #666; /* Text color */
+}
+
+/* Style for the horizontal line (hr) */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Style for the "Learn More" link */
+.activity-card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.activity-card a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+
+.destination-card h3 {
+    font-size: 24px;
+    color: #0078d4;
+    margin-bottom: 10px;
+}
+
+.destination-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.content {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #00a2e8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Center the iframe */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+
+  /* Style the iframe if desired */
+  .map-container iframe {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
