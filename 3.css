@@ -1,0 +1,203 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url("img/for.jpg");
+}
+
+/* Header styles */
+header {
+    background-color: #008000;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+/* Navigation menu styles */
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FF6B6B; /* Change link color on hover */
+}
+
+.hero {
+    background-image: url('img/forest.jpg');
+    /* background-size: cover; */
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative; /* Add position for button placement */
+}
+
+.hero h2 {
+    font-size: 36px; /* Increase font size for a bold title */
+    margin-bottom: 30px; /* Add more spacing below the title */
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #008000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005500; /* Darker green color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Style for the content section */
+.content {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    margin: 20px auto; /* Center the content horizontally */
+    max-width: 700px; /* Limit the width of the content */
+}
+
+.content h2 {
+    font-size: 24px; /* Increase font size for headings */
+    margin-bottom: 20px; /* Add more spacing below headings */
+}
+
+.content p {
+    font-size: 16px; /* Adjust font size for paragraphs */
+    line-height: 1.6; /* Improve readability with line height */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Add more spacing below paragraphs */
+}
+
+.content a {
+    text-decoration: none;
+    color: #007BFF; /* Link color */
+    transition: color 0.3s ease-in-out; /* Add a smooth color transition effect */
+}
+
+.content a:hover {
+    color: #FF6B6B; /* Change link color on hover */
+}
+
+/* Add a subtle border to the content section */
+.content::after {
+    content: "";
+    display: block;
+    width: 100px; /* Adjust the width of the border */
+    height: 2px; /* Border height */
+    background-color: #007BFF; /* Border color */
+    margin: 20px auto; /* Center the border */
+}
+
+
+/* Style for activity cards */
+.activity-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.activity-card:hover {
+    transform: scale(1.05); /* Zoom in a bit on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.activity-card img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.activity-card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333; /* Text color */
+}
+
+.activity-card p {
+    font-size: 16px;
+    color: #666; /* Text color */
+}
+
+.activity-card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.activity-card a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+
+h2 {
+    margin-bottom: 30px;
+}
+.cabin-card{
+    height: 100%;
+    width: 100%;
+}
+footer {
+    background-color: #008000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Center the iframe */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+
+  /* Style the iframe if desired */
+  .map-container iframe {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
